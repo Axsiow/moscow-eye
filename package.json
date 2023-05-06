@@ -1,0 +1,14 @@
+{
+	"name": "moscow-eye",
+	"version": "1.0.0",
+	"description": "bot discord JC 38",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Axsiow",
+	"license": "MIT",
+	"dependencies": {
+		"discord.js": "^14.11.0"
+	}
+	}
