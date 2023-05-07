@@ -1,9 +1,12 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 
 module.exports = {
-	name: 'ping',
-	async run(bot, message) {
-		await message.reply('Ping : ${bot.ws.ping}ms')
+	name: "ping",
+	description: "show ping of bot",
+	permission: "NONE",
+	dm: true,
 
+	async run(bot, message) {
+		await message.reply(`Ping : \`${bot.ws.ping}m\``)
 	}
 }
