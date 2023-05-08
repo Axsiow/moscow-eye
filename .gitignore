@@ -128,6 +128,3 @@ dist
 .vscode/settings.json
 config.json
 .DS_Store
-config.json
-config.json
-*.json
