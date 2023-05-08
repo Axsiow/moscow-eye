@@ -129,3 +129,5 @@ dist
 config.json
 .DS_Store
 config.json
+config.json
+*.json
