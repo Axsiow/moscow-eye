@@ -1,15 +1,11 @@
-const { Client, Collection} = require('discord.js');
-const { token } = require('./config.json');
-const client = new Client({intents: 3276799});
+const Discord = require('discord.js')
+const intents = new Discord.IntentsBitField(3276799)
+const bot = new Discord.Client({intents})
+const config = require('./config')
 
-client.commands = new Collection();
+bot.login(config.token)
 
-["commands"].forEach((handler) => {
-	require(`./handlers/${handler}`);
+bot.on('ready', async () => {
+	console.log(`${client.user.tag} vous regarde.`)
 });
 
-client.on('ready', () => {
-	console.log(`${client.user.tag} vous regarde.`);
-});
-
-client.login(token);
