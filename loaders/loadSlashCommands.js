@@ -12,7 +12,7 @@ module.exports = async bot => {
 		.setName(command.name)
 		.setDescription(command.description)
 		.setDMPermission(command.dm)
-		.setDefaultMemberPermissions(command.defaultPermission === "None" ? null : command.permission)
+		.setDefaultMemberPermissions(command.permission === "None" ? null : command.permission)
 
 		if (command.options?.length >= 1) {
 			for(let i = 0; i < command.options.length; i++) {
