@@ -1,2 +1,2 @@
 # moscow-eye
- L'oeil est partout
+discord bot
